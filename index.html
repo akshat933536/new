@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Happy Birthday Shraddha! 🎂</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #ffccff, #ff99ff);
+            animation: backgroundAnimation 10s infinite alternate;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        @keyframes backgroundAnimation {
+            from { background: linear-gradient(135deg, #ffccff, #ff99ff); }
+            to { background: linear-gradient(135deg, #ff99ff, #ff66cc); }
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            color: #ff0080;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .nav {
+            padding: 10px;
+        }
+        .nav button {
+            margin: 5px;
+            padding: 10px;
+            background: #ff0080;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .nav button:hover {
+            background: #cc0066;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎂 Happy Birthday, Shraddha! 🎈</h1>
+        <div class="nav">
+            <button onclick="showSection('home')">🏠 Home</button>
+            <button onclick="showSection('blessings')">🙏 Blessings</button>
+            <button onclick="showSection('memories')">📸 Memories</button>
+            <button onclick="showSection('wishes')">💌 Wishes</button>
+            <button onclick="showSection('letter')">📜 Special Letter</button>
+        </div><div id="home" class="section active">
+        <h2>Welcome to Your Special Day! 🎉</h2>
+        <p>Hope you have a fantastic day filled with joy and laughter! 🎊</p>
+    </div>
+
+    <div id="blessings" class="section">
+        <h2>🙏 Blessings from Khattu Shyam Ji</h2>
+        <p>श्री खाटू श्याम जी का आशीर्वाद सदा तुम्हारे साथ रहे, तुम्हारी हर मनोकामना पूरी हो, और जीवन में सुख-समृद्धि बनी रहे। जय श्री श्याम! 🌸</p>
+    </div>
+
+    <div id="memories" class="section">
+        <h2>📸 Cherished Memories</h2>
+        <p>From the beautiful moments of laughter to the endless joy we've shared, this day is a celebration of all the wonderful memories you've created! 🎊</p>
+    </div>
+
+    <div id="wishes" class="section">
+        <h2>💌 Wishes from Loved Ones</h2>
+        <p>Everyone who knows you is grateful to have you in their lives. May you always stay happy and achieve everything you wish for! 🎈</p>
+    </div>
+
+    <div id="letter" class="section">
+        <h2>📜 A Special Letter for You</h2>
+        <p>Dear Shraddha,</p>
+        <p>You are a truly wonderful person, and today is all about celebrating your happiness and success. May this year bring you closer to your dreams, and may you always stay blessed. Wishing you a great birthday! 🎂🎉</p>
+    </div>
+</div>
+
+</body>
+</html>
